@@ -82,3 +82,24 @@ body {
 	opacity: 1;
 	transition: 1s ease-in-out, opacity 1s ease-in-out;
 }
+
+@media screen and (max-width: 600px) {
+	.cards__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card1 {
+		background-position-y: 1px;
+	}
+
+	.name {
+		font-size: 20px;
+	}
+
+	.cards:hover .data__container {
+		transform: translateY(-50px);
+		opacity: 1;
+		transition: 1s ease-in-out, opacity 1s ease-in-out;
+	}
+}
