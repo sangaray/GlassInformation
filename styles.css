@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+	background-color: #111;
+}
+
+/* prettier-ignore */
+body, div, img, h1, p {
+	margin: 0;
+	padding: 0;
+  height: 100vh;
+}
+
+.cards__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards {
+	width: 250px;
+	height: 350px;
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 5px #adff2f;
+}
+
+.card1 {
+	background-image: url("./images/Dumbledore.jpg");
+}
+
+.card2 {
+	background-image: url("./images/Severus.jpeg");
+}
+
+.card3 {
+	background-image: url("./images/Voldemort.jpg");
+}
