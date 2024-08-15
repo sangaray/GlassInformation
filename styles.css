@@ -7,27 +7,51 @@
 body, div, img, h1, p {
 	margin: 0;
 	padding: 0;
-  height: 100vh;
+  font-family: sans-serif;
+  color: #f0ffff;
+}
+
+body {
+	height: 100vh;
 }
 
 .cards__container {
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .cards {
-	width: 250px;
-	height: 350px;
+	width: 200px;
+	height: 300px;
 	background-size: cover;
 	background-position: center;
 	margin: 10px;
 	border-radius: 10px;
 	box-shadow: 0 0 5px 5px #adff2f;
+	border: 2px solid #ffa500;
+	position: relative;
+}
+
+.data__container {
+	width: 100%;
+	height: 120px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid #ffffff4d;
+	box-shadow: 0 5px 7px #00000044;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
 }
 
 .card1 {
-	background-image: url("./images/Dumbledore.jpg");
+	background-image: url("./images/Dumbledore.png");
+	background-color: transparent;
 }
 
 .card2 {
@@ -35,5 +59,24 @@ body, div, img, h1, p {
 }
 
 .card3 {
-	background-image: url("./images/Voldemort.jpg");
+	background-image: url("./images/Voldemort.png");
+}
+
+.name,
+.description {
+	background-color: transparent;
+	text-align: center;
+}
+
+.name {
+	font-size: 28px;
+}
+
+.description {
+	font-size: 15px;
+}
+
+.data__container:hover {
+	opacity: 1;
+	transition: 2s ease-in-out;
 }
