@@ -45,7 +45,8 @@ body {
 	box-shadow: 0 5px 7px #00000044;
 	padding: 10px;
 	position: absolute;
-	bottom: 0;
+	bottom: -50px;
+	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 	opacity: 0;
 }
 
@@ -76,7 +77,8 @@ body {
 	font-size: 15px;
 }
 
-.data__container:hover {
+.cards:hover .data__container {
+	transform: translateY(-50px);
 	opacity: 1;
-	transition: 2s ease-in-out;
+	transition: 1s ease-in-out, opacity 1s ease-in-out;
 }
